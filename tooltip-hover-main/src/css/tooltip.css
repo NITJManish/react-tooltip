@@ -1,0 +1,102 @@
+/* style for tooltip components */
+
+.tooltip{
+    height: 50px;
+    width: 400px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid rgb(28, 53, 209);
+    margin-top: 15px;
+    background-color: rgb(23, 192, 46);
+    border-radius: 50%;
+    color: rgb(62, 101, 218);
+    font-size: larger;
+    text-align: center;
+}
+/* styling tooltip text */
+.tooltiptext{
+    width: 200px;
+    background-color: rgb(225, 119, 26);
+    color: rgb(22, 208, 44);
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 8px;
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+    transition: visibility 0.2s;
+}
+/* styling top */
+.top{
+    bottom:100%;
+    left: 50%;
+    margin-bottom: 7px;
+    margin-left: -100px;
+    
+}
+/* styling bottom */
+.bottom{
+    top: 100%;
+    left: 50%;
+    margin-top: 7px;
+    margin-left: -100px;
+}
+/* styling left */
+.left{
+    right: 100%;
+    top:-55%;
+    margin-right: 7px;
+
+}
+/* styling right */
+.right{
+    left:100%;
+    top:-50%;
+    margin-left: 7px;
+}
+
+.top::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgb(56, 76, 192) transparent transparent transparent;
+}
+
+.bottom::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color:transparent transparent  rgb(31, 51, 182)  transparent;
+}
+
+.left::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color:transparent  transparent transparent rgb(67, 49, 224)  ;
+}
+
+.right::after{
+
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color:transparent rgb(55, 74, 197) transparent transparent ;
+}
+
